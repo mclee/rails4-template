@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.0rc1'
+gem 'rails', '~> 4.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,7 +10,7 @@ gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails', '~> 4.0.0rc1'
+gem 'sass-rails'
 gem 'coffee-rails'
 gem 'compass-rails'
 gem 'jquery-ui-rails'
@@ -19,7 +19,7 @@ gem 'jquery-ui-rails'
 gem 'uglifier'
 
 gem 'jquery-rails'
-gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
+gem 'anjlab-bootstrap-rails', '>= 2.3', :require => 'bootstrap-rails'
 gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'devise', '~> 3.0.0rc'
