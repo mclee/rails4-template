@@ -27,6 +27,8 @@ gem 'nested_form'
 gem 'rb-readline'
 gem 'cancan'
 gem 'rolify'
+gem 'holepicker', require: false
+gem 'turbolinks'
 
 group :development do
   gem 'rails-footnotes'
