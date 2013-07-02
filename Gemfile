@@ -12,7 +12,7 @@ gem 'mysql2'
 # in production environments by default.
 gem 'sass-rails'
 gem 'coffee-rails'
-gem 'compass-rails'
+gem 'compass-rails', github: "milgner/compass-rails", branch: "rails4"
 gem 'jquery-ui-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', :platforms => :ruby
