@@ -18,6 +18,9 @@ run "rails g devise User"
 rake "db:migrate"
 run "rails g devise:views"
 
+# figaro
+run "rails g figaro:install"
+
 # simple_form
 run "rails g simple_form:install --bootstrap"
 
@@ -85,6 +88,7 @@ db/*.sqlite3
 .sass-cache
 /config/config.yml
 /config/database.yml
+/config/application.yml
 /coverage.data
 /coverage/
 /db/*.javadb/

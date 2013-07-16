@@ -28,6 +28,7 @@ gem 'cancan'
 gem 'rolify'
 gem 'holepicker', require: false
 gem 'turbolinks'
+gem 'figaro'
 
 group :development do
   gem 'rails-footnotes'
