@@ -29,6 +29,7 @@ gem 'rolify'
 gem 'holepicker', require: false
 gem 'turbolinks'
 gem 'figaro'
+gem 'jbuilder'
 
 group :development do
   gem 'rails-footnotes'
