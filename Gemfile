@@ -38,6 +38,12 @@ group :development do
   gem 'better_errors'
   gem 'awesome_print'
 end
+
+group :development, :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+end
+
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby'
 
