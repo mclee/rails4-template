@@ -87,7 +87,6 @@ db/*.sqlite3
 .sass-cache
 /config/config.yml
 /config/database.yml
-/config/application.yml
 /coverage.data
 /coverage/
 /db/*.javadb/
