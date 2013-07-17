@@ -1,5 +1,4 @@
 # remove files
-run "rm public/index.html"
 run "cp config/database.yml config/database.yml.example"
 
 # install gems
@@ -13,19 +12,19 @@ run "bundle install"
 rake "db:create"
 
 # devise
-run "rails g devise:install"
-run "rails g devise User"
+generate "devise:install"
+generate "devise User"
 rake "db:migrate"
-run "rails g devise:views"
+generate "devise:views"
 
 # figaro
-run "rails g figaro:install"
+generate "figaro:install"
 
 # simple_form
-run "rails g simple_form:install --bootstrap"
+generate "simple_form:install --bootstrap"
 
 # generate rspec
-#generate "rspec:install"
+generate "rspec:install"
 
 # copy files
 # file 'script/watchr.rb', File.read("#{File.dirname(rails_template)}/watchr.rb")
@@ -140,7 +139,7 @@ run "touch log/.gitkeep"
 
 # git commit
 git :init
-git :add => '.'
-git :add => 'tmp/.gitkeep -f'
-git :add => 'log/.gitkeep -f'
-git :commit => "-a -m 'initial commit'"
+git add: '.'
+git add: 'tmp/.gitkeep -f'
+git add: 'log/.gitkeep -f'
+git commit: "-a -m 'initial commit'"
