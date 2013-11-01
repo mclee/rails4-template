@@ -22,7 +22,7 @@ gem 'jquery-rails'
 gem 'anjlab-bootstrap-rails', '>= 2.3', :require => 'bootstrap-rails'
 gem 'font-awesome-rails'
 gem 'simple_form', '~> 3.0.0.rc'
-gem 'devise', '~> 3.0.0rc'
+gem 'devise', '~> 3.1.1'
 gem 'nested_form'
 gem 'cancan'
 gem 'rolify'
@@ -30,6 +30,7 @@ gem 'holepicker', require: false
 gem 'turbolinks'
 gem 'figaro'
 gem 'jbuilder'
+gem 'kaminari'
 
 group :development do
   gem 'rails-footnotes'
@@ -38,6 +39,12 @@ group :development do
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'awesome_print'
+
+  # Deploy with Capistrano
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
 end
 
 group :development, :test do
@@ -55,9 +62,6 @@ gem 'bcrypt-ruby'
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
-# Deploy with Capistrano
-gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
