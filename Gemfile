@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.0'
+gem 'rails', '~> 4.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -19,9 +19,9 @@ gem 'jquery-ui-rails'
 gem 'uglifier'
 
 gem 'jquery-rails'
-gem 'anjlab-bootstrap-rails', '>= 2.3', :require => 'bootstrap-rails'
+gem 'anjlab-bootstrap-rails', '>= 3.0.0.3', :require => 'bootstrap-rails'
 gem 'font-awesome-rails'
-gem 'simple_form', '~> 3.0.0.rc'
+gem 'simple_form', '~> 3.0.0'
 gem 'devise', '~> 3.1.1'
 gem 'nested_form'
 gem 'cancan'
