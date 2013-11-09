@@ -1,8 +1,0 @@
-<% [:info, :success, :danger, :warning, :alert].each do |key| %>
-  <% unless flash[key].blank? %>
-    <div class="alert alert-<%= flash_class(key) %> alert-dismissable">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <%= flash[key]%>
-    </div>
-  <% end %>
-<% end %>

@@ -14,6 +14,7 @@ gem 'sass-rails'
 gem 'coffee-rails'
 gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'jquery-ui-rails'
+gem 'slim'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', :platforms => :ruby
 gem 'uglifier'
