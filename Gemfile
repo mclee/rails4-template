@@ -23,7 +23,6 @@ gem 'anjlab-bootstrap-rails', '>= 3.0.0.3', :require => 'bootstrap-rails'
 gem 'font-awesome-rails'
 gem 'simple_form', '~> 3.0.0'
 gem 'devise', '~> 3.1.1'
-gem 'nested_form'
 gem 'cancan'
 gem 'rolify'
 gem 'holepicker', require: false
@@ -31,6 +30,8 @@ gem 'turbolinks'
 gem 'figaro'
 gem 'jbuilder'
 gem 'kaminari'
+gem 'mini_magick'
+gem 'carrierwave'
 
 group :development do
   gem 'rails-footnotes'
