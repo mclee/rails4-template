@@ -86,6 +86,7 @@ db/*.sqlite3
 /public/cache
 /public/stylesheets/compiled
 /public/system/*
+/public/uploads
 /spec/tmp/*
 /cache
 /capybara*
