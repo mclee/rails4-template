@@ -1,0 +1,6 @@
+- [:info, :success, :danger, :warning, :alert].each do |key| 
+  - unless flash[key].blank?
+    div class="alert alert-#{flash_class(key)} alert-dismissable"
+      button.close[type="button" data-dismiss="alert" aria-hidden="true"]
+        |×
+    = flash[key]
