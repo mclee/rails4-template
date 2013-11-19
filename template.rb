@@ -6,7 +6,10 @@ run "rm Gemfile"
 file 'Gemfile', File.read("#{File.dirname(rails_template)}/Gemfile")
 
 # bullet config
-file 'config/initializers/bullet.rb', File.read("#{File.dirname(rails_template)}/config/initializers/bullet.rb")
+initializer 'bullet.rb', File.read("#{File.dirname(rails_template)}/config/initializers/bullet.rb")
+
+# simple_form workarounds for bootstrap v3
+initializer 'simple_form_bootstrap.rb', File.read("#{File.dirname(rails_template)}/config/initializers/simple_form_bootstrap.rb")
 
 # bundle install
 run "bundle install"
@@ -56,6 +59,10 @@ CODE
 
 # add timezone
 environment "config.time_zone = 'Asia/Shanghai'"
+
+# faster bcrypt
+environment "# Speed up tests by lowering bcrypt's cost function.", env: 'test'
+environment "ActiveModel::SecurePassword.min_cost = true", env: 'test'
 
 # .gitignore
 append_file '.gitignore', <<-CODE
