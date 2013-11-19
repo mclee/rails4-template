@@ -5,6 +5,9 @@ run "cp config/database.yml config/database.yml.example"
 run "rm Gemfile"
 file 'Gemfile', File.read("#{File.dirname(rails_template)}/Gemfile")
 
+# bullet config
+file 'config/initializers/bullet.rb', File.read("#{File.dirname(rails_template)}/config/initializers/bullet.rb")
+
 # bundle install
 run "bundle install"
 

@@ -34,12 +34,13 @@ gem 'mini_magick'
 gem 'carrierwave'
 
 group :development do
-  gem 'rails-footnotes'
   gem 'guard-livereload'
   gem 'rb-fsevent'
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'awesome_print'
+  gem 'rack-mini-profiler'
+  gem 'bullet'
 
   # Deploy with Capistrano
   gem 'capistrano'
