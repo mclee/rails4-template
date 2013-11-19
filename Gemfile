@@ -19,16 +19,15 @@ gem 'jquery-ui-rails'
 gem 'uglifier'
 
 gem 'jquery-rails'
-gem 'anjlab-bootstrap-rails', '>= 3.0.0.3', :require => 'bootstrap-rails'
+gem 'anjlab-bootstrap-rails', '~> 3.0.2.0', :require => 'bootstrap-rails'
 gem 'font-awesome-rails'
 gem 'simple_form', '~> 3.0.0'
-gem 'devise', '~> 3.1.1'
+gem 'devise', '~> 3.2.1'
 gem 'cancan'
 gem 'rolify'
 gem 'holepicker', require: false
 gem 'turbolinks'
 gem 'figaro'
-gem 'jbuilder'
 gem 'kaminari'
 gem 'mini_magick'
 gem 'carrierwave'
@@ -54,6 +53,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
+  gem 'shoulda'
 end
 
 # To use ActiveModel has_secure_password
