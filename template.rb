@@ -59,6 +59,9 @@ CODE
 
 # add timezone
 environment "config.time_zone = 'Asia/Shanghai'"
+environment "config.i18n.default_locale = \"zh-CN\""
+environment "config.i18n.fallbacks = [:en]"
+environment "I18n.enforce_available_locales = true"
 
 # faster bcrypt
 environment "# Speed up tests by lowering bcrypt's cost function.", env: 'test'

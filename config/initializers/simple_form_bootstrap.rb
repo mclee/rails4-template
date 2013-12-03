@@ -70,6 +70,7 @@ SimpleForm.setup do |config|
       input.use :error, wrap_with: { tag: 'span', class: 'help-inline' }
     end
   end
+  config.error_notification_class = 'alert alert-danger'
 
   # Wrappers for forms and inputs using the Twitter Bootstrap toolkit.
   # Check the Bootstrap docs (http://getbootstrap.com/)
