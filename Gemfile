@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.2'
+gem 'rails', '~> 4.1.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,9 +10,10 @@ gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'coffee-rails'
-gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'compass-rails'
 gem 'jquery-ui-rails'
 gem 'slim'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -20,10 +21,9 @@ gem 'slim'
 gem 'uglifier'
 
 gem 'jquery-rails'
-gem 'anjlab-bootstrap-rails', '~> 3.0.2.0', :require => 'bootstrap-rails'
 gem 'font-awesome-rails'
-gem 'simple_form', '~> 3.0.0'
-gem 'devise', '~> 3.2.1'
+gem 'simple_form', '~> 3.0.2'
+gem 'devise', '~> 3.4.0'
 gem 'cancan'
 gem 'rolify'
 gem 'holepicker', require: false
@@ -38,7 +38,6 @@ group :development do
   gem 'rb-fsevent'
   gem 'quiet_assets'
   gem 'better_errors'
-  gem 'awesome_print'
   gem 'rack-mini-profiler'
   gem 'bullet'
 
@@ -46,15 +45,17 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
-  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+  gem 'capistrano-rbenv'
 end
 
 group :development, :test do
+  gem 'awesome_print'
   gem 'rspec'
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'shoulda'
+  gem 'spring'
 end
 
 # To use ActiveModel has_secure_password
