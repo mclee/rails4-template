@@ -24,7 +24,7 @@ rake "db:migrate"
 generate "devise:views"
 
 # figaro
-generate "figaro:install"
+run "figaro install"
 
 # simple_form
 generate "simple_form:install --bootstrap"
