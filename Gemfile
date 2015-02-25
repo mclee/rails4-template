@@ -32,6 +32,7 @@ gem 'figaro'
 gem 'kaminari'
 gem 'mini_magick'
 gem 'carrierwave'
+gem 'rails-i18n'
 
 group :development do
   gem 'guard-livereload'

@@ -59,6 +59,7 @@ CODE
 
 # add timezone
 environment "config.time_zone = 'Asia/Shanghai'"
+environment "config.i18n.available_locales = [:zh-CN, :en, :zh-TW]"
 environment "config.i18n.default_locale = \"zh-CN\""
 environment "config.i18n.fallbacks = [:en]"
 environment "I18n.enforce_available_locales = true"
