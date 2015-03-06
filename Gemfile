@@ -24,7 +24,7 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'simple_form', '~> 3.1.0'
 gem 'devise', '~> 3.4.1'
-gem 'cancan'
+gem 'cancancan'
 gem 'rolify'
 gem 'holepicker', require: false
 gem 'turbolinks'
