@@ -36,6 +36,7 @@ gem 'rails-i18n'
 
 group :development do
   gem 'guard-livereload'
+  gem 'rack-livereload'
   gem 'rb-fsevent'
   gem 'quiet_assets'
   gem 'better_errors'

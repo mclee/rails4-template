@@ -64,6 +64,9 @@ environment "config.i18n.default_locale = \"zh-CN\""
 environment "config.i18n.fallbacks = [:en]"
 environment "I18n.enforce_available_locales = true"
 
+# livereload
+environment "config.middleware.use Rack::LiveReload", env: 'development'
+
 # faster bcrypt
 environment "# Speed up tests by lowering bcrypt's cost function.", env: 'test'
 environment "ActiveModel::SecurePassword.min_cost = true", env: 'test'
