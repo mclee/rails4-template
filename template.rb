@@ -11,6 +11,9 @@ initializer 'bullet.rb', File.read("#{File.dirname(rails_template)}/config/initi
 # simple_form workarounds for bootstrap v3
 initializer 'simple_form_bootstrap.rb', File.read("#{File.dirname(rails_template)}/config/initializers/simple_form_bootstrap.rb")
 
+# kaminari
+initializer 'kaminari_config.rb', File.read("#{File.dirname(rails_template)}/config/initializers/kaminari_config.rb")
+
 # bundle install
 run "bundle install"
 
