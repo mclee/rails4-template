@@ -13,7 +13,6 @@ gem 'mysql2'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'sass-rails', '~> 5.0.1'
 gem 'coffee-rails'
-gem 'compass-rails'
 gem 'jquery-ui-rails'
 gem 'slim-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
