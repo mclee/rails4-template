@@ -9,7 +9,7 @@ file 'Gemfile', File.read("#{File.dirname(rails_template)}/Gemfile")
 initializer 'bullet.rb', File.read("#{File.dirname(rails_template)}/config/initializers/bullet.rb")
 
 # simple_form workarounds for bootstrap v3
-initializer 'simple_form_bootstrap.rb', File.read("#{File.dirname(rails_template)}/config/initializers/simple_form_bootstrap.rb")
+#initializer 'simple_form_bootstrap.rb', File.read("#{File.dirname(rails_template)}/config/initializers/simple_form_bootstrap.rb")
 
 # kaminari
 initializer 'kaminari_config.rb', File.read("#{File.dirname(rails_template)}/config/initializers/kaminari_config.rb")
@@ -66,6 +66,12 @@ environment "config.i18n.available_locales = [\"zh-CN\", :en, \"zh-TW\"]"
 environment "config.i18n.default_locale = \"zh-CN\""
 environment "config.i18n.fallbacks = [:en]"
 environment "I18n.enforce_available_locales = true"
+environment "config.generators do |g|
+  g.view_specs false
+  g.controller_specs false
+  g.assets false
+  g.helper false
+end"
 
 # livereload
 environment "config.middleware.use Rack::LiveReload", env: 'development'
